@@ -1,0 +1,19 @@
+// BOTON NEGRO:HOVER (WITHE) // 
+@mixin bt-black (){
+    background-color: #fff; 
+    color: black; 
+    border: solid; 
+    width: 200px; 
+    height: 50px; 
+    border-radius: 5px; 
+    border-color: black;
+    font-size: 1em; 
+    font-family: 'Poppins', sans-serif;
+
+    &:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.3s;
+}   
+}
+

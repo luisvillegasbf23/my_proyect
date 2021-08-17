@@ -1,0 +1,73 @@
+.comunidad {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 80vh;
+
+    .comunidad__texto {
+        grid-column: 3 / 9;
+        grid-row: 3 / 5;
+        font-size: 1.5em;
+        text-align:center;
+
+    }
+
+    .comunidad__person-1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        grid-row: 6 / 8;
+        grid-column: 4 / 5;
+        align-self: center;
+        justify-self: center;
+
+        &:hover {
+        transform: rotateY(10deg);
+    }
+
+    .info1 {
+        width: 200px;
+        height: 200px;
+        grid-column: 2 / 4;
+        grid-row: 6 / 8;
+        background-color: black;
+
+        p {
+            color: white;
+        }
+
+    }
+    }
+
+    .comunidad__person-2 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        grid-row: 6 / 8;
+        grid-column: 7 / 8;
+        align-self: center;
+        justify-self: center;
+
+        &:hover {
+        transform: rotateY(10deg);
+    }
+    }
+
+    .comunidad__ceo {
+        grid-row: 9 / 10;
+        grid-column: 4 / 5;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .comunidad__programmer {
+        grid-row: 9 / 10;
+        grid-column: 7 / 8;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+}
+

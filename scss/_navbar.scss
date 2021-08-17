@@ -1,0 +1,50 @@
+.navbar {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+
+    a {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .navbar__img {
+        width: 5em;
+        height: 5em;
+        color: white;
+        padding-left: 2em;
+        align-items: center;
+    }
+
+    .navbar__ul {
+        float: right;
+        margin-right: 2em;
+
+        .navbar__li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 8px;
+        line-height: 80px;
+
+        &:hover {
+        border-bottom: 10px - 5px solid white;
+        }
+        }
+    }
+
+    #fa-bars {
+        color: white;
+        font-size: 3em;
+        line-height: 80px;
+        float: right;
+        cursor: pointer;
+        margin-right: 1em;
+        display: none;
+
+    }
+}
+

@@ -1,0 +1,41 @@
+// GENERAL //
+@import "var";
+@import "mixin";
+@import "navbar";
+@import "footer";
+
+// INDEX //
+@import "hero-slide";
+@import "_news";
+
+// PAGES //
+@import "comunidad";
+@import "ligas";
+@import "competicones";
+@import "enviar";
+@import "contacto";
+@import "404";
+
+// FRAMEWORK //
+@import "custom"; 
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: $my-font;
+    background-color: white;
+}
+
+@import "mediaQueries";
+
+
+
+
+

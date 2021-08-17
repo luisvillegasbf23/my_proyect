@@ -1,0 +1,62 @@
+.competiciones {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(2,1fr);
+    color: #fff;
+
+    //CHAMPIONS//
+    .competiciones__champions {
+        background: $capa, url(../img/competiciones/champions.jpg);
+        background-size: cover;  
+        text-align: center; 
+        display: grid;
+        grid-template-rows:  repeat(3, 1fr);
+
+        &:hover .competiciones__content1 {
+            display: block;
+        }
+
+        &:hover .competiciones__h {
+            display: none;
+        }
+
+        .competiciones__h {
+            grid-row: 2 / 3;
+        }
+        .competiciones__content1 {
+        grid-row: 1 / 4;
+        padding: 30px;
+        background-color: black;
+        display: none ;
+    }
+    }  
+
+    //EUROPA//
+    .competiciones__europa {
+        background: $capa, url(../img/competiciones/europa.jfif);
+        background-size: cover;  
+        text-align: center; 
+        display: grid;
+        grid-template-rows:  repeat(3, 1fr);
+
+        &:hover .competiciones__content2 {
+            display: block;
+        }
+
+        &:hover .competiciones__h {
+            display: none;
+        }
+
+        .competiciones__h {
+            grid-row: 2 / 3;
+        }
+        .competiciones__content2 {
+        grid-row: 1 / 4;
+        padding: 30px;
+        background-color: black;
+        display: none ;
+    }
+    }   
+}
+
+

@@ -1,0 +1,43 @@
+@import "../library/bootstrap/scss/bootstrap.scss";
+
+
+// LINKS EDIT//
+a {
+    color: #fff;
+    text-decoration: none; }
+    a:hover {
+      color: #fff; }
+  
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: #fff;
+    text-decoration: none; }
+
+// CONTAINER EDIT //
+    .container,
+    .container-fluid,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0rem);
+      padding-left: var(--bs-gutter-x, 0rem);
+      margin-right: 0;
+      margin-left: 0; }
+
+// NAVBAR EDIT //
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .navbar > .container,
+    .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between; }
