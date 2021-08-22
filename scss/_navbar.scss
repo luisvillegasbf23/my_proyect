@@ -1,50 +1,54 @@
-.navbar {
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    z-index: 100;
 
-    a {
+    .navbarr {
+        width: 100%;
+        position: fixed;
+        background-color: black;
         color: white;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-    .navbar__img {
-        width: 5em;
-        height: 5em;
-        color: white;
-        padding-left: 2em;
-        align-items: center;
-    }
-
-    .navbar__ul {
-        float: right;
-        margin-right: 2em;
-
-        .navbar__li {
-        display: inline-block;
-        text-align: center;
-        margin: 0 8px;
-        line-height: 80px;
-
-        &:hover {
-        border-bottom: 10px - 5px solid white;
+        z-index: 100;
+        
+        .navbar-img {
+            width: 3em;
+            height: 3em;
+            margin: 10px 0px 10px 50px;
+            
         }
+
+        .navbar-ul {
+            display: flex;
+            align-items: center;
+            float: right;
+            padding: 15px 50px 0 0;
+
+            .navbar-li {
+                display: inline;
+                padding: 10px;
+
+                .index {
+                    padding-bottom: 22px;
+                    border-bottom: solid 5px;
+                
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;  
+                    
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        padding-bottom: 22px;
+                        border-bottom: solid 5px;
+                    }
+                }
+                
+            }
         }
-    }
 
-    #fa-bars {
-        color: white;
-        font-size: 3em;
-        line-height: 80px;
-        float: right;
-        cursor: pointer;
-        margin-right: 1em;
-        display: none;
+        #fa-bars {
+            display: none;   
+        }
 
-    }
-}
+} //
+
+
 
