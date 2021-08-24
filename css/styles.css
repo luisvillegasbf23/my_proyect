@@ -51,10 +51,20 @@
     color: #fff;
     text-align: center; }
 
-.main-img {
-  width: 100%;
+.fondo {
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.6)), url(../img/hero-slide/fondo.png);
+  background-size: cover;
   height: 80vh;
-  margin-top: 75px; }
+  width: 100%; }
+  .fondo .fondo-text {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%); }
 
 .news {
   display: grid;
