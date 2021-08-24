@@ -1,7 +1,7 @@
-
+nav {
+    position: sticky;
     .navbarr {
         width: 100%;
-        position: fixed;
         background-color: black;
         color: white;
         z-index: 100;
@@ -47,7 +47,7 @@
         #fa-bars {
             display: none;   
         }
-
+    }
 } //
 
 
