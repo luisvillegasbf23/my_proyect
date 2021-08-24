@@ -1,6 +1,6 @@
 .navbarr {
-  width: 100%;
   position: fixed;
+  width: 100%;
   background-color: black;
   color: white;
   z-index: 100; }
@@ -58,72 +58,23 @@
   width: 100%; }
   .fondo .fondo-text {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 900;
     color: white;
     left: 50%;
     position: absolute;
     top: 40%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 500px) {
+      .fondo .fondo-text {
+        font-size: 2em; } }
 
 .news {
-  display: grid;
+  margin-top: 1em;
   height: 40vh;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: -10px; }
-  .news p {
-    color: white; }
-  .news h1, .news .h1 {
-    padding-left: 10px;
-    color: white; }
-  .news .news__1 {
-    background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.6)), url(../img/news/messi-news.jpg);
-    background-size: cover;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr); }
-    .news .news__1:hover .news__content1 {
-      display: block; }
-    .news .news__1:hover .news__h {
-      display: none; }
-    .news .news__1 .news__h {
-      grid-row: 3 / 4; }
-    .news .news__1 .news__content1 {
-      grid-row: 1 / 4;
-      padding: 30px;
-      background-color: black;
-      display: none; }
-  .news .news__2 {
-    background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.6)), url(../img/news/cr7-news.jpg);
-    background-size: cover;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr); }
-    .news .news__2:hover .news__content2 {
-      display: block; }
-    .news .news__2:hover .news__h {
-      display: none; }
-    .news .news__2 .news__h {
-      grid-row: 3 / 4; }
-    .news .news__2 .news__content2 {
-      grid-row: 1 / 4;
-      padding: 30px;
-      background-color: black;
-      display: none; }
-  .news .news__3 {
-    background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.6)), url(../img/news/rondon-news.jpg);
-    background-size: cover;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr); }
-    .news .news__3:hover .news__content3 {
-      display: block; }
-    .news .news__3:hover .news__h {
-      display: none; }
-    .news .news__3 .news__h {
-      grid-row: 3 / 4; }
-    .news .news__3 .news__content3 {
-      grid-row: 1 / 4;
-      padding: 30px;
-      background-color: black;
-      display: none; }
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.6)), url(../img/news/messi-news.jpg);
+  width: 100%;
+  background-size: cover; }
 
 .comunidad {
   display: grid;
@@ -293,32 +244,72 @@
       display: none; }
 
 .enviar {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  height: 80vh; }
-  .enviar .enviar__texto {
-    font-size: 2em;
-    grid-row: 3 / 5;
-    grid-column: 2 / 10;
-    text-align: center; }
-  .enviar .enviar__form {
-    grid-column: 5 / 7;
-    grid-row: 8 / 9; }
-  .enviar .enviar__boton {
-    background-color: #fff;
+  margin: 1em 0 1em 0;
+  background: url(../img/hero-slide/messi.jpg);
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .enviar .enviar-text {
+    display: block;
+    width: 65%;
+    font-weight: 900;
     color: black;
-    border: solid;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    border-color: black;
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif; }
-    .enviar .enviar__boton:hover {
-      background-color: black;
-      color: #fff;
-      transition: 0.3s; }
+    padding: 0 0 0 3em; }
+    .enviar .enviar-text h1, .enviar .enviar-text .h1 {
+      font-size: 2.5em;
+      font-weight: 900; }
+    .enviar .enviar-text p {
+      font-size: 1.5em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 80%; }
+    .enviar .enviar-text .enviar__boton {
+      background-color: #fff;
+      color: black;
+      border: solid;
+      width: 200px;
+      height: 50px;
+      border-radius: 5px;
+      border-color: black;
+      font-size: 1em;
+      font-family: 'Poppins', sans-serif; }
+      @media (max-width: 500px) {
+        .enviar .enviar-text .enviar__boton {
+          width: 75px;
+          height: 50px;
+          border-radius: 5px;
+          border-color: black;
+          font-size: 1em; } }
+      .enviar .enviar-text .enviar__boton:hover {
+        background-color: black;
+        color: #fff;
+        transition: 0.3s; }
+    @media (max-width: 500px) {
+      .enviar .enviar-text .enviar .enviar-text {
+        width: 100%; }
+      .enviar .enviar-text h1, .enviar .enviar-text .h1 {
+        font-size: 1.5em;
+        font-weight: 900; }
+      .enviar .enviar-text p {
+        font-size: 1em; } }
+    @media (max-width: 1400px) {
+      .enviar .enviar-text .enviar-text {
+        display: block;
+        width: 65%;
+        text-align: start;
+        font-weight: 900;
+        color: black;
+        padding: 2em 0 0 3em; }
+        .enviar .enviar-text .enviar-text h1, .enviar .enviar-text .enviar-text .h1 {
+          font-size: 2.3em;
+          font-weight: 900; }
+        .enviar .enviar-text .enviar-text p {
+          font-size: 1.3em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          width: 80%; } }
 
 .contacto {
   display: grid;
@@ -372,6 +363,13 @@
       border-color: black;
       font-size: 1em;
       font-family: 'Poppins', sans-serif; }
+      @media (max-width: 500px) {
+        .contacto .contacto__form .enviar__boton {
+          width: 75px;
+          height: 50px;
+          border-radius: 5px;
+          border-color: black;
+          font-size: 1em; } }
       .contacto .contacto__form .enviar__boton:hover {
         background-color: black;
         color: #fff;
@@ -7947,15 +7945,15 @@ body {
     height: 100%;
     background-color: black;
     color: white;
-    text-align: center;
     top: 60px;
     left: -100%;
     transition: all .5s;
     flex-direction: column;
     padding-right: 0; }
     .navbarr .navbar-ul .navbar-li {
-      display: block;
-      text-align: center; }
+      display: flex;
+      justify-items: center;
+      align-items: center; }
       .navbarr .navbar-ul .navbar-li a:hover {
         text-decoration: none;
         color: white;

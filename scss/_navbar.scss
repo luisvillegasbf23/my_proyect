@@ -1,6 +1,7 @@
-nav {
-    position: sticky;
+
+
     .navbarr {
+        position: fixed;
         width: 100%;
         background-color: black;
         color: white;
@@ -47,7 +48,7 @@ nav {
         #fa-bars {
             display: none;   
         }
-    }
+
 } //
 
 
