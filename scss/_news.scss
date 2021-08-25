@@ -1,8 +1,124 @@
-.news {
+
+// #1
+.news-one {
     margin-top: 1em;
     height: 40vh;
     background: $capa, url(../img/news/messi-news.jpg);
     width: 100%;
     background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &:hover h1 {
+        display: none;
+    }
+
+    &:hover .news-info {
+        display: flex;
+    } 
+
+    h1 {
+        position: absolute;
+        font-size: 3em;
+        color: white;
+        font-weight: 900;
+        padding-left: 1em; 
+    }
+
+    .news-info {
+        position: relative;
+        background: black;
+        opacity: 0.8;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-items: center;
+        padding: 1.5em;
+        
+    }
+}
+
+// #2
+.news-two {
+    margin-top: 1em;
+    height: 40vh;
+    background: $capa, url(../img/news/cr7-news.jpg);
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &:hover h1 {
+        display: none;
+    }
+
+    &:hover .news-info {
+        display: flex;
+    } 
+
+    h1 {
+        position: absolute;
+        font-size: 3em;
+        color: white;
+        font-weight: 900;
+        padding-left: 1em; 
+    }
+
+    .news-info {
+        position: relative;
+        background: black;
+        opacity: 0.8;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-items: center;
+        padding: 1.5em;
+        
+    }
+}
+
+// #3
+.news-three {
+    margin-top: 1em;
+    height: 40vh;
+    background: $capa, url(../img/news/rondon-news.jpg);
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &:hover h1 {
+        display: none;
+    }
+
+    &:hover .news-info {
+        display: flex;
+    } 
+
+    h1 {
+        position: absolute;
+        font-size: 3em;
+        color: white;
+        font-weight: 900;
+        padding-left: 1em; 
+    }
+
+    .news-info {
+        position: relative;
+        background: black;
+        opacity: 0.8;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        justify-items: center;
+        padding: 1.5em;
+        
+    }
 }
 
