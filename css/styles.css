@@ -67,7 +67,9 @@
     transform: translate(-50%, -50%); }
     @media (max-width: 500px) {
       .fondo .fondo-text {
-        font-size: 2em; } }
+        font-size: 2em;
+        font-weight: 900;
+        text-align: left; } }
 
 .news-one {
   margin-top: 1em;
